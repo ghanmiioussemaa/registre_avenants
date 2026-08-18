@@ -1,0 +1,63 @@
+{
+  "avenants": {
+    "Changement adresse": {
+      "documents": [
+        "Justificatif de domicile",
+        "Carte d'identité"
+      ],
+      "checks": [
+        "Contrat actif",
+        "Adresse valide",
+        "Date d'effet renseignée",
+        "Pièce d'identité non expirée",
+        "Correspondance avec le contrat"
+      ],
+      "impact": [
+        "Recalcul de la prime si changement de zone",
+        "Mise à jour des coordonnées"
+      ]
+    },
+    "Changement RIB": {
+      "documents": [
+        "RIB/IBAN",
+        "Mandat SEPA signé",
+        "Carte d'identité"
+      ],
+      "checks": [
+        "IBAN valide",
+        "Titulaire du compte conforme au souscripteur",
+        "Pièce d'identité non expirée",
+        "Correspondance avec le contrat"
+      ],
+      "impact": [
+        "Mise à jour du mode de prélèvement"
+      ]
+    },
+    "Changement nom": {
+      "documents": [
+        "Carte d'identité",
+        "Justificatif de changement de nom"
+      ],
+      "checks": [
+        "Correspondance avec le contrat",
+        "Justificatif officiel fourni",
+        "Pièce d'identité non expirée"
+      ],
+      "impact": [
+        "Mise à jour des informations du client"
+      ]
+    },
+    "Correction informations personnelles": {
+      "documents": [
+        "Carte d'identité"
+      ],
+      "checks": [
+        "Vérification de l'identité",
+        "Pièce d'identité non expirée"
+      ],
+      "impact": [
+        "Correction des données"
+      ]
+    }
+  }
+}

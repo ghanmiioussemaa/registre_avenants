@@ -1,0 +1,36 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python / backend ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+*.egg-info/
+
+# --- Données sensibles générées par l'app (mails, pièces jointes, rapports clients) ---
+backend/data/emails/*
+backend/data/attachments/*
+backend/data/pdf_reports/*
+backend/data/json/*
+!backend/data/emails/.gitkeep
+!backend/data/attachments/.gitkeep
+!backend/data/pdf_reports/.gitkeep
+!backend/data/json/.gitkeep
+backend/logs/*
+!backend/logs/.gitkeep
+
+# --- Node / frontend ---
+node_modules/
+dist/
+.DS_Store
+
+# --- Éditeurs / OS ---
+.vscode/
+.idea/
+Thumbs.db
